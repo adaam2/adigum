@@ -93,6 +93,21 @@ function custom_theme_options() {
         'operator'    => 'and'
       ),
       array(
+        'id'          => 'site_google_analytics',
+        'label'       => 'Google Analytics ID',
+        'desc'        => 'i.e: UA-183476423-0',
+        'std'         => '',
+        'type'        => 'text',
+        'section'     => 'site_general',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
         'id'          => 'site_fb_url',
         'label'       => 'Facebook Profile URL',
         'desc'        => '',
