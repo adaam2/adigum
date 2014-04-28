@@ -3,7 +3,7 @@
     the_post();
     
     if(has_post_thumbnail()) {
-        $featured_image = true;
+        $featured_image = w_get_thumbnail_url('large');
     }
     else {
         $featured_image = false;
@@ -23,13 +23,13 @@
                 <?php if($featured_image) : ?>
                 <!-- article image -->
                 <div class="article-image">
-                    <div class="post-image-image" style="background-image: url(http://dev.local/readium/media/2014/04/DSC_0301.jpg);"></div>
+                    <div class="post-image-image" style="background-image: url(<?php echo $featured_image; ?>);"></div>
                     
                     <div class="post-meta">
                         <h1 class="post-title"><?php the_title(); ?></h1>
                         
                         <div class="cf post-meta-text">
-                            <div class="author-image" style="background-image: url(<?php echo get_avatar_url(get_the_author_meta('ID'), 30); ?>);"></div>
+                            <div class="author-image" style="background-image: url(<?php echo w_get_avatar_url(get_the_author_meta('ID'), 30); ?>);"></div>
                             <h4 class="author-name"><?php the_author(); ?></h4> on
                             <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('F j, Y'); ?></time> on <?php the_category(', ') ?>
                         </div>
@@ -44,7 +44,7 @@
                         <h1 class="post-title"><?php the_title(); ?></h1>
                         
                         <div class="cf post-meta-text">
-                            <div class="author-image" style="background-image: url(<?php echo get_avatar_url(get_the_author_meta('ID'), 30); ?>);"></div>
+                            <div class="author-image" style="background-image: url(<?php echo w_get_avatar_url(get_the_author_meta('ID'), 30); ?>);"></div>
                             <h4 class="author-name"><?php the_author(); ?></h4> on
                             <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('F j, Y'); ?></time> on <?php the_category(', ') ?>
                         </div>
@@ -84,7 +84,7 @@
                         <h5 class="index-headline featured"><span>Written by</span></h5>
                         
                         <section class="author">
-                            <div class="author-image" style="background-image: url(<?php echo get_avatar_url(get_the_author_meta('ID'), 80); ?>);"></div>
+                            <div class="author-image" style="background-image: url(<?php echo w_get_avatar_url(get_the_author_meta('ID'), 80); ?>);"></div>
                             <h4><?php the_author(); ?></h4>
                             <p class="bio"><?php the_author_meta('description'); ?></p>
                             <hr>

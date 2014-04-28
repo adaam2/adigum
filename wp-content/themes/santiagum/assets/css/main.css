@@ -54,7 +54,7 @@ body {
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig"; }
 
-.logo-readium {
+.logo-santiagum {
   position: fixed;
   left: 10px;
   top: 10px;
@@ -63,14 +63,13 @@ body {
   background-color: black;
   overflow: hidden;
   z-index: 99; }
-  .logo-readium .logo {
+  .logo-santiagum .logo {
     display: block;
     position: absolute;
     top: 8px;
     left: 8px;
     width: 32px;
     height: 32px;
-    background-image: url("/assets/img/readium-logo.png");
     background-size: cover;
     background-repeat: no-repeat; }
 

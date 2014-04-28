@@ -12,6 +12,14 @@
     else {
         $favicon = get_stylesheet_directory_uri() . '/assets/img/santiagum-favicon.png';
     }
+    
+    if(ot_get_option('site_tw_url')) {
+        $twitter_username = parse_url(ot_get_option('site_tw_url'));
+        $twitter_username = $twitter_username['path'];
+    }
+    else {
+        $twitter_username = false;
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,15 +38,26 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="DASDASD">
-        <meta name="twitter:description" content="Lorem ipsum">
-        <meta name="twitter:site" content="http://juanpablob.com">
-        <meta name="twitter:creator" content="@juanpablob">
+        <meta name="twitter:title" content="<?php bloginfo('name'); ?>">
+        <meta name="twitter:description" content="<?php bloginfo('description'); ?>">
+        <meta name="twitter:site" content="<?php bloginfo('url'); ?>">
+        <?php if($twitter_username) : ?>
+        <meta name="twitter:creator" content="<?php echo str_replace('/', '@', $twitter_username); ?>">
+        <?php endif; ?>
         <meta name="google-site-verification" content="">
-        <meta property="fb:admins" content="">
-        <meta property="og:type" content="article">
-        <meta property="og:title" content="Acme Site">
-        <meta property="og:description" content="Lorem ipsum">
+        
+        <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
+        <meta property="og:type" content="blog">
+        <?php if(is_single() OR is_page()) : ?>
+        <meta property="og:title" content="<?php the_title(); ?>">
+        <meta property="og:description" content="<?php echo get_the_excerpt(); ?>">
+        <meta property="og:url" content="<?php the_permalink(); ?>">
+        <?php else : ?>
+        <meta property="og:title" content="<?php bloginfo('name'); ?>">
+        <meta property="og:description" content="<?php bloginfo('description'); ?>">
+        <meta property="og:url" content="<?php bloginfo('url'); ?>">
+        <?php endif; ?>
+        <meta property="og:image" content="<?php echo w_check_thumbnail(); ?>">
         <!-- /meta -->
         
         <!-- styles -->
@@ -55,4 +74,4 @@
     </head>
     
     <body <?php body_class(); ?>>
-        <a href="<?php bloginfo('url'); ?>" class="logo-readium"><span class="logo" style="background-image: url(<?php echo $isotype; ?>);"></span></a>
+        <a href="<?php bloginfo('url'); ?>" class="logo-santiagum"><span class="logo" style="background-image: url(<?php echo $isotype; ?>);"></span></a>

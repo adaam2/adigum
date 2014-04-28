@@ -25,12 +25,42 @@
     }
     
     // Get avatar
-    function get_avatar_url($author_id, $size) {
+    function w_get_avatar_url($author_id, $size) {
         $get_avatar = get_avatar($author_id, $size);
         
         preg_match("/src='(.*?)'/i", $get_avatar, $matches);
         
         return ($matches[1]);
+    }
+    
+    // Get post thumbnail url
+    function w_get_thumbnail_url($size = 'large') {
+        global $post;
+        
+        $featured_image = get_post_thumbnail_id($post->ID);
+        $featured_image = wp_get_attachment_image_src($featured_image, $size, true);
+        $featured_image = $featured_image[0];
+        
+        return $featured_image;
+    }
+    
+    // Check post thumbnail
+    function w_check_thumbnail() {
+        global $post;
+        
+        if(has_post_thumbnail($post->ID)) {
+            $thumbnail = w_get_thumbnail_url('large');
+        }
+        else {
+            if(ot_get_option('site_coverphoto')) {
+                $thumbnail = ot_get_option('site_coverphoto');
+            }
+            else {
+                $thumbnail = get_stylesheet_directory_uri() . '/assets/img/santiagum-cover.jpg';
+            }
+        }
+        
+        return $thumbnail;
     }
     
     // Support
