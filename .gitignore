@@ -1,5 +1,6 @@
 .DS_Store
 .git
 .svn
+.htaccess
 node_modules
 .sass-cache
