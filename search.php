@@ -4,19 +4,7 @@
             
             <!-- content -->
             <main class="content" role="main">
-                <?php if(is_day()) : ?>
-                <h5 class="index-headline normal"><span>Daily archive: <?php echo get_the_date(); ?></span></h5>
-                <?php elseif(is_month()) : ?>
-                <h5 class="index-headline normal"><span>Monthly archive: <?php echo get_the_date(); ?></span></h5>
-                <?php elseif(is_year()) : ?>
-                <h5 class="index-headline normal"><span>Yearly archive: <?php echo get_the_date(); ?></span></h5>
-                <?php elseif(is_category()) : ?>
-                <h5 class="index-headline normal"><span>Posts under <?php single_cat_title(); ?></span></h5>
-                <?php elseif(is_tag()) : ?>
-                <h5 class="index-headline normal"><span>Posts tagged with <?php single_tag_title(); ?></span></h5>
-                <?php else : ?>
-                <h5 class="index-headline normal"><span>Archive</span></h5>
-                <?php endif; ?>
+                <h5 class="index-headline normal"><span>Search results for "<?php echo get_search_query(); ?>"</span></h5>
                 
                 <?php include('loop.php'); ?>
             </main>

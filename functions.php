@@ -4,6 +4,11 @@
     add_filter( 'ot_theme_mode', '__return_true' );
     load_template( trailingslashit( get_template_directory() ) . 'options/ot-loader.php' );
     
+    // Content With
+    if(!isset($content_width)) {
+        $content_width = 700;
+    }
+    
     // Page Title
     function w_title($delimiter) {
         global $post;
@@ -17,6 +22,15 @@
         elseif(is_category()) {
             $title = single_cat_title('', false) . ' ' . $delimiter . ' ' . get_bloginfo('name');
         }
+        elseif(is_tag()) {
+            $title = single_tag_title('', false). ' ' . $delimiter . ' ' . get_bloginfo('name');
+        }
+        elseif(is_archive()) {
+            $title = 'Archive for ' . get_the_date() . ' ' . $delimiter . ' ' . get_bloginfo('name');
+        }
+        elseif(is_search()) {
+            $title = get_search_query() . ' ' . $delimiter . ' ' . get_bloginfo('name');
+        }
         else {
             $title = get_bloginfo('name');
         }
@@ -24,7 +38,7 @@
         return $title;
     }
     
-    // Get avatar
+    // Get Avatar
     function w_get_avatar_url($author_id, $size) {
         $get_avatar = get_avatar($author_id, $size);
         
@@ -33,7 +47,7 @@
         return ($matches[1]);
     }
     
-    // Get post thumbnail url
+    // Get Post Thumbnail URL
     function w_get_thumbnail_url($size = 'large') {
         global $post;
         
@@ -44,7 +58,7 @@
         return $featured_image;
     }
     
-    // Check post thumbnail
+    // Check Post Thumbnail
     function w_check_thumbnail() {
         global $post;
         
@@ -66,6 +80,10 @@
     // Support
     if(function_exists('add_theme_support')) {
         add_theme_support('post-thumbnails', array('post', 'page'));
+        
+        add_theme_support('automatic-feed-links');
+        
+        add_theme_support('html5', array('search-form'));
     }
     
     // Custom Filters, Hooks and Actions
@@ -77,6 +95,14 @@
     function previous_posts_link_custom_attr() {
         return 'class="newer-posts"';
     }
+    
+    add_filter('wp_list_categories', 'cat_count_span');
+    function cat_count_span($links) {
+        $links = str_replace('</a> (', '</a> <span>', $links);
+        $links = str_replace(')', '</span>', $links);
+        
+        return $links;
+}
     
     add_action('admin_menu', 'remove_menus');
     function remove_menus() {
@@ -92,6 +118,13 @@
                 display: none;
             }
         </style>';
+    }
+    
+    add_action('init', 'register_menus');
+    function register_menus() {
+        register_nav_menus(array(
+            'home-nav' => 'Home Nav'
+        ));
     }
 
 ?>

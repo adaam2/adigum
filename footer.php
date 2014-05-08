@@ -20,5 +20,9 @@
             <?php endif; ?>
         </script>
         <!-- /scripts -->
+        
+        <!-- wp footer -->
+        <?php wp_footer(); ?>
+        <!-- /wp footer -->
     </body>
 </html>

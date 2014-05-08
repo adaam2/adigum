@@ -24,6 +24,9 @@ Medium-like theme for [WordPress](http://wordpress.org/), based on [Readium](htt
 * Rewrite CSS document in LESS
 * Create navigation menu as side pane as in Medium through upper left corner logo, in order to include Categories, Pages and Search
 * Add comments feature under posts
+* Add lightbox for preview large images
+* Add gallery support
+
 
 Send your feature request or to-do as an **Issue** in this repo or drop me an email to *m.juanpablob [at] gmail [dot] com*.
 

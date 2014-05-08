@@ -22,7 +22,7 @@
     }
 ?>
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
     <head>
         <meta charset="utf-8" />
         
@@ -64,14 +64,54 @@
         <link href="<?php echo $favicon; ?>" rel="shortcut icon">
         <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/main.css" rel="stylesheet">
         <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/styles/github.css" rel="stylesheet">
-        <link href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i" rel="stylesheet">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
         <!-- /styles -->
         
         <!-- scripts -->
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <!-- /scripts -->
+        
+        <!-- wp head -->
+        <?php wp_head(); ?>
+        <!-- /wp head -->
     </head>
     
     <body <?php body_class(); ?>>
-        <a href="<?php bloginfo('url'); ?>" class="logo-santiagum"><span class="logo" style="background-image: url(<?php echo $isotype; ?>);"></span></a>
+        <!-- aside nav -->
+        <aside>
+            <h5>Search</h5>
+            
+            <form role="search" method="get" action="<?php bloginfo('url'); ?>/">
+                <input type="search" class="search-field" placeholder="Search for..." value="" name="s" title="Search for:" />
+            </form>
+            
+            <h5>Pages</h5>
+            
+            <ul class="list-pages">
+                <li><a href="<?php bloginfo('url'); ?>">Home</li>
+                <?php wp_list_pages(array('title_li' => false)); ?>
+            </ul>
+            
+            <h5>Categories</h5>
+            
+            <ul class="list-categories">
+                <?php wp_list_categories(array('title_li' => false, 'show_count' => 1)); ?>
+            </ul>
+            
+            <h5>Archives</h5>
+            
+            <?php
+                $archives = wp_get_archives(array('show_post_count' => 1, 'echo' => 0));
+                $archives = 
+                $archives = str_replace('</a>&nbsp;(', '</a> <span>', $archives);
+                $archives = str_replace(')', '</span>', $archives);
+            ?>
+            <ul class="list-archives">
+                <?php echo $archives; ?>
+            </ul>
+        </aside>
+        <!-- /aside nav -->
+        
+        <!-- wrapper -->
+        <div class="wrapper">
+            <a href="<?php bloginfo('url'); ?>" class="logo-santiagum"><span class="logo" style="background-image: url(<?php echo $isotype; ?>);"></span></a>

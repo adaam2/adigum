@@ -9,6 +9,9 @@
   font-style: normal;
   src: url("../fonts/icons.eot");
   src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg"); }
+  
+@font-face{font-family:'Linux Libertine';font-style:normal;font-weight:400;src:local('Linux Libertine O'),url('../fonts/linux-libertine-400.woff') format('woff')}@font-face{font-family:'Linux Libertine';font-style:italic;font-weight:400;src:local('Linux Libertine O Italic'),url('../fonts/linux-libertine-400i.woff') format('woff')}@font-face{font-family:'Linux Libertine';font-style:normal;font-weight:700;src:local('Linux Libertine O Bold'),url('../fonts/linux-libertine-700.woff') format('woff')}@font-face{font-family:'Linux Libertine';font-style:italic;font-weight:700;src:local('Linux Libertine O Bold Italic'),url('../fonts/linux-libertine-700i.woff') format('woff')}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),url('../fonts/open-sans-400.woff') format('woff')}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local('Open Sans Italic'),url('../fonts/open-sans-400i.woff') format('woff')}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local('Open Sans Bold'),url('../fonts/open-sans-700.woff') format('woff')}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local('Open Sans Bold Italic'),url('../fonts/open-sans-700i.woff') format('woff')}
+
 /* Apply these base styles to all icons */
 .icon-ghost:before,
 .icon-feed:before,
@@ -43,7 +46,7 @@
   content: "\e004"; }
 
 body {
-  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', MundoSans, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
@@ -72,6 +75,9 @@ body {
     height: 32px;
     background-size: cover;
     background-repeat: no-repeat; }
+body.admin-bar .logo-santiagum {
+    top: 42px;
+}
 
 .teaserimage {
   height: 450px;
@@ -157,8 +163,8 @@ body {
     .content {
       padding: 0 32px; } }
   .content article {
-    padding: 40px 0;
-    border-bottom: 1px solid #f2f2f0; }
+    padding: 40px 0 0 0;
+    /*border-bottom: 1px solid #f2f2f0;*/ }
     .content article:last-child {
       border-bottom: 0px; }
     .content article .post-title {
@@ -232,7 +238,7 @@ body {
   letter-spacing: -0.02em;
   font-weight: 400;
   font-style: normal;
-  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', MundoSans, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   z-index: 999; }
 
 .tag-articleimage .post-reading {
@@ -278,7 +284,7 @@ body {
     left: 30%;
     right: 30%;
     z-index: 999;
-    font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', MundoSans, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
@@ -316,7 +322,7 @@ body {
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), 0px 0px 1px rgba(0, 0, 0, 0.5);
     font-size: 14px;
     overflow: hidden;
-    font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', MundoSans, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     white-space: nowrap;
     text-overflow: ellipsis; }
     .post .article-image .post-meta-text a {
@@ -332,7 +338,7 @@ body {
   .post .article-image .topofpage {
     text-decoration: underline; }
 .post .noarticleimage .post-meta {
-  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', MundoSans, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   padding-top: 60px; }
 .post .noarticleimage .post-title {
   font-weight: 700;
@@ -362,15 +368,15 @@ body {
   font-style: normal;
   font-size: 14px;
   overflow: hidden;
-  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', MundoSans, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   white-space: nowrap;
   text-overflow: ellipsis; }
 .post .post-content {
   width: 100%;
-  font-family: Linux Libertine;
+  font-family: 'Linux Libertine', Georgia, serif;
   color: #333333; }
   .post .post-content h1, .post .post-content h2, .post .post-content h3 {
-    font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif; }
+    font-family: 'Open Sans', MundoSans, 'Helvetica Neue', Arial, Helvetica, sans-serif; }
   .post .post-content h3, .post .post-content h4, .post .post-content h5, .post .post-content h6 {
     letter-spacing: -0.02em;
     font-weight: 700;
@@ -378,7 +384,7 @@ body {
     font-size: 24px;
     line-height: 1.3;
     margin: 0;
-    font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', MundoSans, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     margin-bottom: 4px; }
   .post .post-content h2, .post .post-content h1 {
     letter-spacing: -1.5px;
@@ -404,7 +410,8 @@ body {
     text-decoration: underline; }
   .post .post-content img {
     max-width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: auto; }
   .post .post-content figure {
     margin: 0;
     padding: 0 0 30px; }
@@ -416,7 +423,8 @@ body {
     color: #666665;
     outline: 0;
     z-index: 300;
-    text-align: center; }
+    text-align: center;
+}
   .post .post-content code {
     /*background-color: #333333;*/
     /*color: white;*/
@@ -494,7 +502,7 @@ body {
     list-style-type: decimal; }
 .post .bottom-teaser {
   padding: 50px 0;
-  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif; }
+  font-family: 'Open Sans', MundoSans, 'Helvetica Neue', Arial, Helvetica, sans-serif; }
   .post .bottom-teaser hr {
     border: 0;
     padding: 0;
@@ -569,7 +577,19 @@ body {
         font-weight: 700;
         color: #333333; }
 
+.tags {
+  float: left;
+  width: 50%;
+  text-align: left;
+  padding: 24px 0 0;
+  font-size: 14px;
+  color: #bbb;
+}
+.tags a {
+  color: #bbb;
+}
 .share {
+  float: right;
   text-align: right;
   padding: 20px 0 0;
   color: #bbb;
@@ -651,4 +671,303 @@ body {
 
 .none {
     display: none;
+}
+
+/* Etc */
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+hr.splitter {
+    border: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+    border: 0;
+    border-top: 1px solid #dededc;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+}
+
+
+
+aside {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    overflow: scroll;
+    width: 220px;
+    height: 100%;
+    padding: 15px;
+    color: #dedede;
+    background-color: #111;
+}
+aside h5 {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #686868;
+}
+aside ul {
+    margin: 5px 0 25px 0;
+    padding: 0;
+    list-style-type: none;
+}
+aside li {
+    padding: 6px 0;
+    font-size: 14px;
+    line-height: 100%;
+    /*outline: 1px solid red;*/
+    /*border-bottom: 1px solid #262626;*/
+}
+aside li a {
+    color: #a6a6a6;
+    text-decoration: none;
+}
+aside li a:hover {
+    color: #d6d6d6;
+}
+.list-categories li span,
+.list-tags li span,
+.list-archives li span {
+    display: inline-block;
+    width: 20px;
+    float: right;
+    margin-top: -3px;
+    padding: 5px 5px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    font-size: 11px;
+    text-align: center;
+    line-height: 100%;
+    font-weight: bold;
+    background-color: #262626;
+}
+aside form {
+    margin: 5px 0 25px 0;
+}
+aside form input {
+    width: 70%;
+    margin: 0;
+    padding: 7px 4px;
+    border-width: 0;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    outline: 0;
+    font-size: 14px;
+    color: #a6a6a6;
+    background-color: #262626;
+}
+
+
+.admin-bar aside {
+    top: 32px;
+}
+
+
+
+
+.post .post-content .wp-caption {
+    display: block;
+    width: 100% !important;
+}
+.post .post-content .alignleft {
+    text-align: left;
+}
+.post .post-content .alignright {
+    text-align: right;
+}
+.post .post-content .aligncenter {
+    text-align: center;
+}
+.post .post-content .alignnone {
+    text-align: center;
+}
+.post .post-content .wp-caption img {
+    /*width: 100%;
+    height: auto;*/
+    display: block;
+}
+.post .post-content .wp-caption-text {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.3;
+    color: #666665;
+    outline: 0;
+    z-index: 300;
+    text-align: center;
+}
+.sticky {
+    
+}
+.gallery-caption {
+    
+}
+.bypostauthor {
+    
+}
+.alignright,
+.alignleft,
+.aligncenter {
+    
+}
+
+
+#comments {
+    margin-bottom: 70px;
+    font-size: 14px;
+}
+#comments .index-headline {
+    cursor: pointer;
+}
+#comments .comment-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#comments .comment-list .children {
+    margin: 0 0 0 48px;
+    padding: 0;
+    list-style-type: none;
+}
+#comments .comment-list .children li {
+    margin-top: 30px;
+}
+#comments .comment-list li {
+    margin-bottom: 30px;
+}
+#comments .comment-list .comment-body {
+    padding-left: 48px;
+}
+#comments .comment-list .comment-author {
+    color: #999;
+    margin-left: -48px;
+}
+#comments .comment-list .comment-author .avatar {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    vertical-align: text-top;
+    margin-right: 10px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+#comments .comment-list .comment-author cite {
+    font-style: normal;
+}
+#comments .comment-list .comment-author cite a {
+    color: #333;
+    text-decoration: none;
+}
+#comments .comment-list .comment-author cite a:hover {
+    text-decoration: underline;
+}
+#comments .comment-list .comment-meta {
+    font-size: 12px;
+    font-style: italic;
+    color: #999;
+    margin-top: -18px;
+    margin-left: -48px;
+    padding-left: 48px;
+}
+#comments .comment-list .comment-meta a {
+    color: #999;
+    text-decoration: none;
+}
+
+#comments .comment-list .comment-body p {
+    line-height: 1.5;
+}
+#comments .comment-list .reply a {
+    color: #333;
+}
+
+#respond a {
+    color: #333;
+}
+
+#respond label {
+    display: none;
+}
+#respond input {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #dededc;
+    font-size: 13px;
+    background-color: #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+#respond textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #dededc;
+    font-size: 13px;
+    background-color: #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+#respond .comment-form-author,
+#respond .comment-form-email,
+#respond .comment-form-url {
+    width: 30%;
+    float: left;
+}
+#respond .comment-form-author,
+#respond .comment-form-email {
+    margin-right: 5%;
+}
+@media only screen and (max-width: 600px) {
+    #respond .comment-form-author,
+    #respond .comment-form-email,
+    #respond .comment-form-url {
+        width: 100%;
+        float: none;
+    }
+    #respond .comment-form-author,
+    #respond .comment-form-email {
+        margin-right: 0;
+    }
+}
+#respond .form-allowed-tags {
+    font-size: 12px;
+    color: #999;
+}
+
+#respond .form-submit input {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: -0.02em;
+    font-size: 15px;
+    font-weight: 100 !important;
+    font-style: normal;
+    text-decoration: none;
+    cursor: pointer;
+    height: 44px;
+    background: #3d90c1;
+    color: white;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border-radius: 999em;
+    line-height: 44px;
+    padding: 0 18px;
+    border: 0;
+    outline: 0;
 }
