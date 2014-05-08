@@ -1,6 +1,6 @@
 # Santiagum 1.0
 
-Medium-like theme for [WordPress](http://wordpress.org/), based on [Readium](http://www.svenread.com/readium-ghost-theme/) made by [Sven Read](http://www.svenread.com/) for [Ghost](http://www.ghost.org/) platform. I made the adaptation and enhancements to the code and also some pretty little things on design.
+Medium-like theme for [WordPress](http://wordpress.org/), based on [Readium](http://www.svenread.com/readium-ghost-theme/) made by [Sven Read](http://www.svenread.com/) for [Ghost](http://www.ghost.org/) platform. I made the adaptation and several improvements to the code and also some pretty little things on design.
 
 * **[View Demo](http://juanpablob.com/santiagum/)**
 * Download **Santiagum** [from WordPress site](#) or [directly from this repo](#).
