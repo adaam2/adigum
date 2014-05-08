@@ -267,7 +267,9 @@ body.admin-bar .logo-santiagum {
   left: 0;
   right: 0;
   bottom: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  min-height: 400px;
+}
   .post .article-image .post-image-image {
     background-size: cover;
     position: absolute;

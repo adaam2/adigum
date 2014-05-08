@@ -19,14 +19,14 @@ Medium-like theme for [WordPress](http://wordpress.org/), based on [Readium](htt
 * Free & Open Source Font usage
 * Ready for WordPress 3.x.x
 * Configuration panel (under Theme Options) to customize site logo, favicon, social networks, custom feed URL, Google Analytics code, etc
+* Tagging support
+* Side navigation pane just like in Medium, for categories, pages and archives
+* Comments ready
 
 ## To-Do
 * Rewrite CSS document in LESS
-* Create navigation menu as side pane as in Medium through upper left corner logo, in order to include Categories, Pages and Search
-* Add comments feature under posts
 * Add lightbox for preview large images
 * Add gallery support
-
 
 Send your feature request or to-do as an **Issue** in this repo or drop me an email to *m.juanpablob [at] gmail [dot] com*.
 
@@ -41,6 +41,7 @@ This theme works as any other simple WordPress theme. Here's special notes for s
 * To attach an image to a post or page as cover photo (just like in Medium), just add the image to *Set featured image* option under post/page editing
 * To stick posts under *Featured Posts* in home page, mark the post as *Sticky*. Do this by expanding *Visibility* option under post editing
 * The author's avatar is taken from Gravatar
+* There are two navigations: One of them in the left side pane of theme (through top-left corner logo) which contains search area, pages, categories and archives. And the other one is a quick navigation for most important links/pages or it could be act as shortcuts, it's located bellow blog name and tagline in home page. To activate and configure this navigation go to Appearance > Menus.
 
 ## Suggestions
 
@@ -51,10 +52,18 @@ This theme works as any other simple WordPress theme. Here's special notes for s
   
 ## Support
 
-At any time you can add an **Issue** to this repo to notify bugs or broken things. I'll be watching for new issues to fix them as soon as I can.
+All major browsers:
+
+* IE8+
+* Google Chrome
+* Firefox
+* Opera
+* Webkit Mobile Browsers
+
+At any time you can add an **Issue** to this repo to notify bugs or broken things. I'll be watching for new issues to fix them as soon as I can. .gitmodulesS
 
 ## Thanks to:
 * [Sven Read](http://www.svenread.com/) for taking the time to make a well-done theme for Ghost
 * [Medium](http://medium.com/) Team for their awesome work! And also for guiding the line towards a better design trends related to news reading and blogging
-* [Rodrigo Almendras](https://www.flickr.com/photos/ralmendr/) for taking that beautiful photo of Santiago, Chile used as default cover in this theme
+* [Rodrigo Almendras](https://www.flickr.com/photos/ralmendr/) for taking that beautiful photo of Santiago, Chile used as default cover in this theme (modified by me)
 * [WordPress](http://wordpress.org/) and [Ghost](http://ghost.org/) for existing
