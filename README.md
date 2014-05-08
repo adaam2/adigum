@@ -27,6 +27,7 @@ Medium-like theme for [WordPress](http://wordpress.org/), based on [Readium](htt
 * Rewrite CSS document in LESS
 * Add lightbox for preview large images
 * Add gallery support
+* Add language support
 
 Send your feature request or to-do as an **Issue** in this repo or drop me an email to *m.juanpablob [at] gmail [dot] com*.
 
@@ -52,13 +53,13 @@ This theme works as any other simple WordPress theme. Here's special notes for s
   
 ## Support
 
-All major browsers:
-
-* IE8+
-* Google Chrome
-* Firefox
-* Opera
-* Webkit Mobile Browsers
+* Language: Only available in English lang. Internationalization will come over the next few months
+* Browser support: All major browsers
+  * IE8+
+  * Google Chrome
+  * Firefox
+  * Opera
+  * Webkit Mobile Browsers
 
 At any time you can add an **Issue** to this repo to notify bugs or broken things. I'll be watching for new issues to fix them as soon as I can. .gitmodulesS
 
