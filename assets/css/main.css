@@ -422,7 +422,7 @@ body.admin-bar .logo-santiagum {
         text-decoration: underline;
     }
     .post .post-content li li {
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
     }
   .post .post-content img {
     max-width: 100%;
