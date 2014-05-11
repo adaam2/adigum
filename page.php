@@ -46,7 +46,7 @@
                             <div class="cf post-meta-text">
                                 <div class="author-image" style="background-image: url(<?php echo w_get_avatar_url(get_the_author_meta('ID'), 30); ?>);"></div>
                                 <h4 class="author-name"><?php the_author(); ?></h4> on
-                                <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('F j, Y'); ?></time> on <?php the_category(', ') ?>
+                                <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('F j, Y'); ?></time>
                             </div>
                         </div>
                     </div>
