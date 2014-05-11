@@ -1,8 +1,12 @@
 <?php
 
     // Option Tree
-    add_filter( 'ot_theme_mode', '__return_true' );
-    load_template( trailingslashit( get_template_directory() ) . 'options/ot-loader.php' );
+    add_filter('ot_theme_mode', '__return_true');
+    add_filter('ot_show_pages', '__return_false');
+    add_filter('ot_show_new_layout', '__return_false');
+    //load_template(trailingslashit(get_template_directory()) . 'options/ot-loader.php');
+    require_once('options/ot-loader.php');
+    require_once('theme-options.php');
     
     // Content With
     if(!isset($content_width)) {
