@@ -54,6 +54,9 @@ var santiagum = {
             }, 500);
         });
         
+        // Fit videos
+        $('.post-content').fitVids();
+        
         // Calculate reading time
         $('.post-content').readingTime({
             readingTimeTarget: '.post-reading-time',
