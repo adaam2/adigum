@@ -1,4 +1,5 @@
         <!-- scripts -->
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery.fitvids.js"></script>
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/readingTime.min.js"></script>
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/highlight.pack.js"></script>

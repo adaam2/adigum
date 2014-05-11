@@ -67,10 +67,6 @@
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
         <!-- /styles -->
         
-        <!-- scripts -->
-        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <!-- /scripts -->
-        
         <!-- wp head -->
         <?php wp_head(); ?>
         <!-- /wp head -->

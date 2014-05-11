@@ -134,8 +134,8 @@ var santiagum = {
     },
     
     init: function() {
-        santiagum.ui();
         santiagum.teaserImage();
+        santiagum.ui();
         santiagum.triggers();
         
         hljs.initHighlightingOnLoad();
