@@ -55,31 +55,13 @@ var santiagum = {
         });
         
         // Fit videos
-        //$('.post-content').fitVids();
+        $('.post-content').fitVids();
         
         // Calculate reading time
         $('.post-content').readingTime({
             readingTimeTarget: '.post-reading-time',
-            wordCountTarget: '.post-word-count',
+            wordCountTarget: '.post-word-count'
         });
-        
-        // Create captions from alt tags
-        /*$('.post-content img').each(function() {
-            if($(this).attr('alt')) {
-                $(this).wrap('<figure class="image"></figure>').after('<figcaption>' + $(this).attr('alt')+'</figcaption>');
-            }
-        });*/
-        
-        // Remove first image of article and make cover post
-        /*$('.post-content').each(function() {
-            var $this = $(this),
-            img = $this.find('img:first'),
-            url = img.attr('src');
-            
-            $('.post-image-image').css('background-image', 'url('+ url +')');
-                    
-            img.remove();
-        });*/
         
         // Search
         $('aside form input').focus(function() {
