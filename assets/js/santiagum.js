@@ -23,7 +23,7 @@ var santiagum = {
                 return;
             }
             
-            $image.css('transform', 'translate3d(0px, '+top/3+'px, 0px)').css('opacity', 1-Math.max(top/700, 0));
+            $image.css('transform', 'translate3d(0px, '+top/3+'px, 0px)').css('opacity', 0.80 - Math.max(top/900, 0));
         });
         
         $window.trigger('scroll');            
