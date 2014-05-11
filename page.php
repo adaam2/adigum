@@ -68,7 +68,11 @@
                     <!-- /post content -->
                     
                     <!-- post footer -->
-                    <footer class="post-footer">
+                    <footer class="post-footer cf">
+                        <section class="tags">
+                            
+                        </section>
+                        
                         <section class="share">
                             Share this post on 
                             <a href="http://twitter.com/intent/tweet?url=<?php echo urldecode(get_permalink($post->ID)); ?>&text=<?php echo urldecode(get_the_title($post->ID)); ?>&hashtags=&via=juanpablob" onclick="window.open(this.href, 'twitter-share', 'width=550,height=290'); return false;"><i class="fa fa-twitter"></i><span class="hidden">Twitter</span></a>
