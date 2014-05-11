@@ -407,7 +407,8 @@ body.admin-bar .logo-santiagum {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto; }
-    .post .post-content p code {
+    .post .post-content p code,
+    .post .post-content li code {
         font-size: 20px !important;
         position: static !important;
         padding: 0 !important;
