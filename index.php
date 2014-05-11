@@ -9,7 +9,7 @@
                     rsort($sticky);
                     $sticky = array_slice($sticky, 0, 5);
                     
-                    $featured_posts = query_posts(array('post__in' => $sticky));
+                    query_posts(array('post__in' => $sticky));
                     
                     if(have_posts()) :
                 ?>
