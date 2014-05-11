@@ -417,6 +417,13 @@ body.admin-bar .logo-santiagum {
   .post .post-content a {
     color: #333333;
     text-decoration: underline; }
+    .post .post-content a:hover {
+        color: #111;
+        text-decoration: underline;
+    }
+    .post .post-content li li {
+        margin-bottom: 0;
+    }
   .post .post-content img {
     max-width: 100%;
     margin: 0 auto;
