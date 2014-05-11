@@ -279,7 +279,14 @@ body.admin-bar .logo-santiagum {
     bottom: 0;
     text-indent: -9999px;
     padding-top: 33%;
-    z-index: 1; }
+    z-index: 1;
+    -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
+    }
   .post .article-image .post-meta {
     position: absolute;
     bottom: 80px;
