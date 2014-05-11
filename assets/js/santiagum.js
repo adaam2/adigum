@@ -54,6 +54,15 @@ var santiagum = {
             }, 500);
         });
         
+        // Fit videos
+        $('.post-content').fitVids();
+        
+        // Calculate reading time
+        /*$('.post-content').readingTime({
+            readingTimeTarget: '.post-reading-time',
+            wordCountTarget: '.post-word-count'
+        });*/
+        
         // Search
         $('aside form input').focus(function() {
             $(this).animate({
