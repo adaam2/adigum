@@ -431,6 +431,10 @@ body.admin-bar .logo-santiagum {
     .post .post-content li li {
         margin-bottom: 0 !important;
     }
+    .post .post-content li ol,
+    .post .post-content li ul {
+        margin-bottom: 0 !important;
+    }
   .post .post-content img {
     max-width: 100%;
     margin: 0 auto;
