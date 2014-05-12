@@ -50,7 +50,7 @@
         <meta property="og:type" content="blog">
         <?php if(is_single() OR is_page()) : ?>
         <meta property="og:title" content="<?php the_title(); ?>">
-        <meta property="og:description" content="<?php echo get_the_excerpt(); ?>">
+        <meta property="og:description" content="<?php echo w_get_excerpt(80); ?>">
         <meta property="og:url" content="<?php the_permalink(); ?>">
         <?php else : ?>
         <meta property="og:title" content="<?php bloginfo('name'); ?>">

@@ -994,3 +994,40 @@ aside form input {
     border: 0;
     outline: 0;
 }
+
+
+body.error404 {
+    background-image: url('../img/noise.gif');
+    background-size: cover;
+    background-color: #000;
+}
+body.error404 .wrapper {
+    width: 100% !important;
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.error-page {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 13%;
+    color: #fff;
+}
+.error-page h5 {
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    color: #999;
+}
+.error-page h1 {
+    margin: 0 0 15px 0;
+    font-size: 50px;
+    line-height: 100%;
+}
+.error-page p {
+    margin: 0 0 20px 0;
+}
+.error-page a {
+    text-decoration: underline;
+    color: #fff;
+}

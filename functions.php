@@ -42,6 +42,36 @@
         return $title;
     }
     
+    // Custom excerpt
+    function w_get_excerpt($length = 100, $content = false) {
+		global $post;
+		$content = $post->post_excerpt;
+        
+		if($content) {
+            $content = $post->post_excerpt;
+            $content = strip_shortcodes($content);
+            $content = str_replace(']]>', ']]&gt;', $content);
+            $content = strip_tags($content);
+            $content = wp_strip_all_tags($content);
+        } else {
+            $content = $post->post_content;
+            $content = strip_shortcodes($content);
+            $content = str_replace(']]>', ']]&gt;', $content);
+            $content = strip_tags($content);
+            
+            $excerpt_length = $length;
+			$words = explode(' ', $content, $excerpt_length + 1);
+			
+			if(count($words) > $excerpt_length) {
+				array_pop($words);
+				array_push($words, '...');
+				$content = implode(' ', $words);
+			}
+		}
+		
+		return $content;
+    }
+    
     // Get Avatar
     function w_get_avatar_url($author_id, $size) {
         $get_avatar = get_avatar($author_id, $size);
