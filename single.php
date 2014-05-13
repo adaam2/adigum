@@ -76,7 +76,21 @@
                         
                         <section class="share">
                             Share this post on 
-                            <a href="http://twitter.com/intent/tweet?url=<?php echo urldecode(get_permalink($post->ID)); ?>&text=<?php echo urldecode(get_the_title($post->ID)); ?>&hashtags=&via=juanpablob" onclick="window.open(this.href, 'twitter-share', 'width=550,height=290'); return false;"><i class="fa fa-twitter"></i><span class="hidden">Twitter</span></a>
+                            <?php
+                                if(ot_get_option('site_tw_url')) {
+                                    $twitter_username = parse_url(ot_get_option('site_tw_url'));
+                                    $twitter_username = $twitter_username['path'];
+                                }
+                                else {
+                                    $twitter_username = false;
+                                }
+                                
+                                if($twitter_username) :
+                            ?>
+                            <a href="http://twitter.com/intent/tweet?url=<?php echo urldecode(get_permalink($post->ID)); ?>&text=<?php echo urldecode(get_the_title($post->ID)); ?>&hashtags=&via=<?php echo $twitter_username; ?>" onclick="window.open(this.href, 'twitter-share', 'width=550,height=290'); return false;"><i class="fa fa-twitter"></i><span class="hidden">Twitter</span></a>
+                            <?php else : ?>
+                            <a href="http://twitter.com/intent/tweet?url=<?php echo urldecode(get_permalink($post->ID)); ?>&text=<?php echo urldecode(get_the_title($post->ID)); ?>" onclick="window.open(this.href, 'twitter-share', 'width=550,height=290'); return false;"><i class="fa fa-twitter"></i><span class="hidden">Twitter</span></a>
+                            <?php endif; ?>
                             
                             <a href="https://www.facebook.com/sharer/sharer.php?u=<?php get_permalink($post->ID); ?>" onclick="window.open(this.href, 'facebook-share','width=550,height=290'); return false;"><i class="fa fa-facebook"></i><span class="hidden">Facebook</span></a>
                         </section>
