@@ -5,6 +5,7 @@
 }
 
 $rs: 16px;
+$page-width: 740px;
 
 $font-sans: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
 
@@ -110,8 +111,8 @@ body {
 
 .blog-header {
   width: 100%;
-  border-bottom: 1px solid #dededc;
-  max-width: 640px;
+  border-bottom: 1px solid #f2f2f0;
+  max-width: $page-width;
   margin: 0 auto;
   position: relative;
   padding: 0;
@@ -174,7 +175,7 @@ body {
 
 .content {
   width: 100%;
-  max-width: 640px;
+  max-width: $page-width;
   margin: 0 auto;
   @include box-sizing(border-box);
   @include respond-to(800) {
@@ -444,6 +445,7 @@ body {
     width: 100%;
     font-family: $font-sans;
     color: #333333;
+
     h1, h2, h3 {
       font-family: $font-sans;
     }
@@ -470,7 +472,7 @@ body {
       font-weight: 400;
       font-style: normal;
       font-size: 19px;
-      line-height: 30px;
+      line-height: 25px;
       margin: 0;
       padding-bottom: 30px;
       color: #333333;
@@ -484,6 +486,7 @@ body {
     }
     img {
       max-width: 100%;
+      height: auto;
       margin: 0 auto;
     }
     figure {
@@ -501,25 +504,22 @@ body {
       text-align: center;
     }
     code {
-      background-color: #333333;
-      color: white;
+      background-color: #ffe;
+      color: black;
       border-color: #333333;
       font-family: Inconsolata, monospace, sans-serif;
-      border-radius: 8px;
       padding: 2px 4px 4px;
-      position: relative;
-      top: -3px;
       white-space: nowrap;
       -webkit-hyphens: none;
       -moz-hyphens: none;
       hyphens: none;
     }
     pre > code {
-      background-color: #333333;
+      background-color: #ffe;
       border-color: #333333;
       @include box-sizing(border-box);
       padding: ms(1rem, 1, 1.33) ms(1rem, 2, 1.33);
-      color: white;
+      color: black;
       line-height: 1.4;
       width: 100%;
       display: block;
@@ -754,4 +754,27 @@ body {
       padding: 0 18px;
     }
   }
+}
+footer {
+  section.tags {
+    font-family: Myriad Pro, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 0;
+    margin-top: 30px;
+    li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    a {
+      text-decoration: none;
+      color:#666;
+      padding:0 0 0 3px;
+      &:hover {
+        color:#333;
+      }
+    }
+  }
+
 }

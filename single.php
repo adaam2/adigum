@@ -126,7 +126,7 @@
                     <!-- /bottom teaser -->
                 </article>
 
-                <?php comments_template(); ?>
+                <?php /*comments_template();*/ ?>
             </main>
             <!-- /content -->
             <?php endwhile; endif; ?>

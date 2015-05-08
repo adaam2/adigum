@@ -1,0 +1,350 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"styl",
+				"stylesheet"
+			],
+			[
+				"he",
+				"header	Tag"
+			],
+			[
+				"pre",
+				"pre-wrap"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"generat",
+				"generators"
+			],
+			[
+				"re",
+				"require"
+			],
+			[
+				"loc",
+				"$locationProvider	AngularJS"
+			],
+			[
+				"rout",
+				"$routeProvider	AngularJS"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"inl",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"list p",
+				"Package Control: List Packages"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 332.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-content/themes/adigum"
+	],
+	"file_history":
+	[
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-content/themes/adigum/single.php",
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-content/themes/adigum/assets/stylesheets/css/screen.css",
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-content/themes/adigum/header.php",
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-content/themes/adigum/assets/stylesheets/scss/main.scss",
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-content/themes/adigum/assets/config.rb",
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-content/themes/adigum/assets/config.codekit",
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-content/themes/adigum/assets/stylesheets/sass/main.scss",
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-content/themes/adigum/config.rb",
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-content/themes/adigum/config.codekit",
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-content/themes/adigum/assets/css/main.css",
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-content/themes/adigum/assets/css/main.scss",
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-content/themes/adigum/index.php",
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-content/themes/adigum/assets/css/bourbon/_bourbon.scss",
+		"/Users/adambull/Documents/Code/Wordpress/wordpress/wp-config.php",
+		"/Users/adambull/Documents/Code/Rails/ajb15rails/app/views/home/index.html.erb",
+		"/Users/adambull/Documents/Code/Rails/ajb15rails/app/views/layouts/application.html.erb",
+		"/Users/adambull/Documents/Code/Rails/ajb15rails/app/assets/stylesheets/base/_main.scss",
+		"/Users/adambull/Documents/Code/Rails/ajb15rails/app/assets/stylesheets/settings/_main.scss",
+		"/Users/adambull/Documents/Code/Rails/ajb15rails/app/assets/stylesheets/generic/_main.scss",
+		"/Users/adambull/Documents/Code/Rails/ajb15rails/app/assets/stylesheets/base/_critical.scss",
+		"/Users/adambull/Documents/Code/Rails/ajb15rails/app/assets/stylesheets/application.scss",
+		"/Users/adambull/Documents/Code/Rails/ajb15rails/config/routes.rb",
+		"/Users/adambull/Documents/Code/Rails/ajb15rails/app/controllers/home_controller.rb",
+		"/Users/adambull/Documents/Code/Rails/ajb15rails/app/assets/stylesheets/vendor/_critical.scss",
+		"/Users/adambull/Documents/Code/Rails/ajb15rails/config/application.rb",
+		"/Users/adambull/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/adambull/Documents/MBDropbox/Dropbox/ACCO Live code/Kensington/userControls/wtb2009.ascx",
+		"/Users/adambull/Downloads/northwind.sql",
+		"/Users/adambull/Documents/MBDropbox/Dropbox/webdevelopment/AccoCMS2012/amazonMWSPull.aspx.cs",
+		"/Users/adambull/Dropbox/Personal/lin-ICOA",
+		"/Users/adambull/Documents/twitter-streaming-api-nodejs/parser.js",
+		"/Users/adambull/Documents/twitter-streaming-api-nodejs/package.json",
+		"/Users/adambull/Documents/twitter-streaming-api-nodejs/js/main.js",
+		"/Users/adambull/Documents/twitter-streaming-node/package.json",
+		"/Users/adambull/Library/Application Support/Sublime Text 3/Packages/User/LiveReload.sublime-settings",
+		"/Users/adambull/Documents/marathon/scss/vars.scss",
+		"/Users/adambull/Documents/marathon/scss/general.scss",
+		"/Users/adambull/Documents/marathon/scss/main.scss",
+		"/Users/adambull/Documents/marathon/index.html",
+		"/Users/adambull/Documents/marathon/scss/fonts.scss",
+		"/Users/adambull/Documents/marathon/scss/typeplate/_typeplate-vars.scss",
+		"/Users/adambull/Documents/marathon/scss/grid.scss",
+		"/Users/adambull/Documents/marathon/scss/layout.scss",
+		"/Users/adambull/Documents/marathon/scss/form.scss",
+		"/Users/adambull/Documents/marathon/scss/typography.scss",
+		"/Users/adambull/Documents/marathon/scss/components.scss",
+		"/Users/adambull/Library/Application Support/Sublime Text 3/Packages/LiveReload/LiveReload.sublime-settings",
+		"/Users/adambull/Documents/Visual Studio 2013/Projects/APoorMansTwitterStreamingClient/.gitignore",
+		"/private/etc/hosts",
+		"/Users/adambull/Documents/wherelionsroam-ng-frontend/app/scripts/app.js",
+		"/Users/adambull/Library/Application Support/Sublime Text 3/Packages/User/GutterColor.sublime-settings",
+		"/Users/adambull/Documents/wherelionsroam-ng-frontend/app/views/main.html",
+		"/Users/adambull/Documents/wherelionsroam-ng-frontend/app/index.html",
+		"/Users/adambull/Documents/wherelionsroam-ng-frontend/app/scripts/controllers/post.js",
+		"/Users/adambull/Documents/wherelionsroam-ng-frontend/terminal.glue",
+		"/Users/adambull/Documents/wherelionsroam-ng-frontend/app/scripts/templates/paginationTmp.tpl.html",
+		"/Users/adambull/Documents/wherelionsroam-ng-frontend/app/styles/variables.scss",
+		"/Users/adambull/Documents/wherelionsroam-ng-frontend/app/styles/main.scss",
+		"/Users/adambull/Documents/wherelionsroam-ng-frontend/app/scripts/controllers/main.js",
+		"/Users/adambull/Documents/wherelionsroam-ng-frontend/app/views/posts.html",
+		"/Users/adambull/Documents/Visual Studio 2013/Projects/wherelionsroam/wherelionsroam.Web/assets/css/global.css",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/stylesheets/cv.scss",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/stylesheets/navigation.scss",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/stylesheets/footer.scss",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/views/home/index.html.erb",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/stylesheets/layout.scss",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/stylesheets/about.scss",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/Gemfile",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/stylesheets/application.css.scss",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/stylesheets/typography.scss",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/config/application.rb",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/config/initializers/stream_rails.rb",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/views/layouts/application.html.erb",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/stylesheets/base.scss",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/views/cv/index.html.erb",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/config/routes.rb",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/stylesheets/variables.scss",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/javascripts/application.js",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/views/about/index.html.erb",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/stylesheets/neat/navigation.scss",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/stylesheets/reset.scss",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/config/initializers/navigasmic.rb",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/stylesheets/mixins.scss",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/stylesheets/blog.scss",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/assets/stylesheets/home.scss",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/controllers/blog_controller.rb",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/controllers/programming_controller.rb",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/controllers/application_controller.rb",
+		"/Users/adambull/Dropbox/RubyStuff/wherelionsroam.co.uk/app/helpers/application_helper.rb",
+		"/Users/adambull/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"comments",
+			"comment-author",
+			"comment-author vcard",
+			"post-ti",
+			".content",
+			"post-ti",
+			"post-con",
+			"$font-serif",
+			"woff",
+			"woff2",
+			"icons.woff",
+			"woff",
+			"modular-scale",
+			"script",
+			"modular-scale",
+			"modular-sc",
+			"$golden",
+			"rem",
+			"font-size-base",
+			"producttype",
+			"productType",
+			"<div class=\"post-body\" ng-bind-html=\"TrustDangerousSnippet(post)\">\n                <p>{{post.Content}}</p>\n            </div>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$font-sans",
+			"ms",
+			"em",
+			"base-font-size"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "adigum.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
